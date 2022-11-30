@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 import './index.scss';
-import './App.scss';
+import './styles/App.scss';
+import './styles/projectDetails.scss';
 
 import App from './App';
 import Footer from './Footer';
