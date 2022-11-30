@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.06 4.28">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #19c0d9;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke-width: .25px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #000;
+      }
+
+      .cls-4 {
+        stroke: #e61a8e;
+      }
+
+      .cls-5 {
+        stroke: #f7de02;
+      }
+    </style>
+  </defs>
+  <path class="cls-5" d="M0,2.69c1.38,0,1.38,1,2.76,1s1.38-1,2.76-1,1.38,1,2.77,1,1.38-1,2.77-1"/>
+  <path class="cls-4" d="M.02,2.91c1.38,0,1.38,1,2.75,1s1.38-1,2.75-1,1.38,1,2.76,1,1.38-1,2.76-1"/>
+  <path class="cls-1" d="M.01,3.15c1.38,0,1.38,1,2.75,1s1.38-1,2.75-1,1.38,1,2.76,1,1.38-1,2.76-1"/>
+  <g>
+    <path d="M.01,2.45c1.38,0,1.38,1,2.75,1s1.38-1,2.75-1,1.38,1,2.76,1,1.38-1,2.76-1"/>
+    <path class="cls-3" d="M.01,2.45c1.38,0,1.38,1,2.75,1s1.38-1,2.75-1,1.38,1,2.76,1,1.38-1,2.76-1"/>
+  </g>
+  <rect class="cls-2" x=".52" y=".5" width="10.03" height="1.51"/>
+</svg>
