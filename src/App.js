@@ -2,17 +2,20 @@ import React from 'react';
 import Projects from './components/Projects';
 import Landing from './components/Landing';
 import NotFound from './NotFound';
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { AnimatePresence } from 'framer-motion';
+
 
 function App(){
+  const location = useLocation();
   return (
-  <Routes>
-    <Route path="/" element={<Landing />}/>
-    <Route path="/Projects/:id" element={<Projects />}/>
-    <Route path="*" element={<NotFound />}/>
-
-
-  </Routes>
+    <AnimatePresence exit>
+    <Routes location={location} key={location.pathname}>
+      <Route path="/" element={<Landing />}/>
+      <Route path="/Projects/:id" element={<Projects />}/>
+      <Route path="*" element={<NotFound />}/>
+    </Routes>
+  </AnimatePresence>
   )
 }
 

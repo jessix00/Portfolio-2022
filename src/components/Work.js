@@ -3,7 +3,7 @@ import Sticky from './Sticky';
 
 function Work (props){
   return (
-    <div className='work'>
+    <div className='work' id="work">
       <h1>My Work</h1>
       <h2 className='workTitle'>UI/UX Projects</h2>
       <div className='block'>

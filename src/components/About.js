@@ -1,11 +1,23 @@
+import { motion } from "framer-motion";
+
 function About (props){
   return (
     <div className='top'>
       <header>
+      <motion.div 
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.9,
+        delay: 0.3,
+        ease: [0, 0.71, 0.2, 1.01]
+      }}
+       >
         <img className="hero-img" src="images/hero-image.jpg" alt="Jessica Casillas in Papago Park on a cloudy day" />
           <h1>My name is Jessica,<br />
               a UI/UX Designer & Web Developer
           </h1>
+      </motion.div>
           
       </header>
       <div className='about'>

@@ -1,6 +1,8 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-
+import {useLocation} from 'react-router-dom';
+import {motion} from 'framer-motion';
+import {useEffect} from 'react';
+import {Link} from 'react-router-dom';
 
 function Ipro() {
   return(
@@ -117,17 +119,21 @@ const ProjectIntros = ({ slug }) => {
   }
 }
 
-<shop/>
-
 const ProjectIntro = () => {
     const projectPath = useLocation();
+    useEffect(() => {
+      window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+    }, []);
 
     return (
       <React.Fragment>
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1 }} exit={{opacity:0}} transition={{ duration: 0.6}}>
         <div className='project-intro'>
+        <Link to={`/#work`} className='backBtn'>Back To Projects</Link>
             <ProjectIntros slug={projectPath.pathname.split("/")[2]} />
         </div>
-        </React.Fragment>
+        </motion.div>
+      </React.Fragment>
     );
 
 }; export default ProjectIntro;
